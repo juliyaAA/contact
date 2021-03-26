@@ -1,0 +1,111 @@
+.connection {
+    padding: 140px 0 212px;
+    overflow: hidden;
+    background-color: #fff;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__address {
+        max-width: 585px;
+        width: 100%;
+        &_text {
+            font-size: 35px;
+            span {
+                color: #32a961;
+                font-weight: 700;
+            }
+        }
+        &_contacts {
+            margin-top: 84px;
+            font-size: 25.5px;
+            font-weight: 700;
+            color: #2e2d37;
+        }
+        &_band {
+            margin-top: 14px;
+            width: 113px;
+            height: 5px;
+            background-color: #32a961;
+        }
+        &_contact {
+            margin-top: 60px;
+        }
+        &_icons {
+            display: flex;
+            margin-top: 40px;
+            font-size: 25px;
+            font-weight: 400;
+            color: #2e2d37;
+            &-margin {
+                margin-right: 45px;
+            }
+            &-mess {
+                width: 67px;
+                display: flex;
+                justify-content: space-between;
+                margin-right: 19px;
+            }
+        }
+    }
+    &__form {
+        max-width: 690px;
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        background-color: #32a961;
+        padding: 18px 23px 26px 21px;
+        p {
+            font-size: 25px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        label {
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+        input {
+            width: 300px;
+            height: 49px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ffffff;
+            padding: 17px 0 20px 19px;
+            margin-top: 9px;
+        }
+        input[placeholder] {
+            font-size: 16px;
+            font-weight: 400;
+            color: #5a5963;
+        }
+        input[type="submit"] {
+            margin-top: 60px;
+            background-color: #ffc000;
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 4px;
+            padding: 0;
+            text-align: center;
+            color: #ffffff;
+        }
+        &_findings-input {
+            margin-top: 25px;
+        }
+        &_group {
+            width: 100%;
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &_message textarea {
+            resize: none;
+            margin-top: 8px;
+            border-radius: 10px;
+            padding: 15px;
+            border: none;
+            width: 300px;
+            height: 355px;
+        }
+    }
+}

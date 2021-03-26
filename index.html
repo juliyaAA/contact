@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <a href="#">
+                            <picture>
+                                <source srcset="img/logo.webp" type="image/webp">
+                                <img src="img/logo.png">
+                            </picture>
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item active">
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">
+                                    Отзывы
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="country">
+                        <picture>
+                            <source srcset="img/rus.webp" type="image/webp">
+                            <img src="img/rus.png">
+                        </picture>
+                        <div class="country-text">
+                            RUS
+                        </div>
+                    </div>
+                    <div class="header__box">
+                        <div class="header__box-wrap">
+                            <a class="add-object elem btn" href="#">
+                                Добавить свой объект
+                            </a>
+                            <a class="registration elem btn" href="#">
+                                Зарегистрироваться
+                            </a>
+                            <a class="enter elem btn" href="#">
+                                Войти в аккаунт
+                            </a>
+                        </div>
+                    </div>
+                    <div class="burger-menu">
+                        <div class="first-line"></div>
+                        <div class="second-line"></div>
+                        <div class="third-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="navigation">
+		<div class="container">
+			<div class="navigation__container">
+				<ul class="navigation__ul">
+					<li ><a class="active" href="#">Главная</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+    <div class="connection">
+        <div class="container">
+            <div class="connection__info">
+                <div class="connection__address">
+                    <div class="connection__address_text">
+                        <b>Если у вас остались вопросы -</b>
+                        <span>свяжитесь с нами</span> удобным для Вас способом!
+                    </div>
+                    <div class="connection__address_contacts">Контакты:</div>
+                    <div class="connection__address_band"></div>
+                    <div>
+                        <div class="connection__address_contact">
+                            <div class="connection__address_icons">
+                                <img class="connection__address_icons-margin" src="icons/call.svg" alt="phone">
+                                <div>+38 000 000 00 00</div>
+                            </div>
+                            <div class="connection__address_icons">
+                                <img class="connection__address_icons-margin" src="icons/gmail.svg" alt="email">
+                                <div>noname@gmail.com</div>
+                            </div>
+                            <div class="connection__address_icons">
+                                <div class="connection__address_icons-mess">
+                                    <img src="icons/telegram.svg" alt="messengers">
+                                    <img src="icons/whatsapp.svg" alt="messengers">
+                                </div>
+                                <div>+38 000 000 00 00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="connection__form" action="#" method="POST">
+                    <p>Напишите сообщение</p>
+                    <div class="connection__form_group">
+                        <div class="connection__form_findings">
+                            <div>
+                                <label for="nameForm">Имя</label> <br>
+                                <input type="text" id="nameForm" name="name" value placeholder="Иван" required>
+                            </div>
+                            <div class="connection__form_findings-input">
+                                <label for="lastNameForm">Фамилия</label> <br>
+                                <input type="text" id="lastNameForm" name="lastName" value placeholder="Иванов" required>
+                            </div>
+                            <div class="connection__form_findings-input">
+                                <label for="mailForm">E-mail</label> <br>
+                                <input type="email" id="mailForm" name="mail" value placeholder="ivanov@gmail.com" required>
+                            </div>
+                            <div>
+                                <input type="submit" value="Отправить">
+                            </div>
+                        </div>
+                        <div class="connection__form_message">
+                            <label for="message">Сообщение</label> <br>
+                            <textarea name="textArea" id="message" required></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a href="#">
+                            <picture>
+                                <source srcset="img/logo-footer.webp" type="image/webp">
+                                <img src="img/logo-footer.png">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="footer__info">
+                        <div class="footer__text">
+                            Copyright © 1996–2020 findon™.
+                        </div>
+                        <div class="footer__text">
+                            Все права защищены.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
