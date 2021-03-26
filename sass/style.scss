@@ -1,6 +1,6 @@
 @import "variable";
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     box-sizing: border-box;
 }
 .container {
@@ -8,7 +8,7 @@
     width: 100%;
     margin: 0 auto;
     display: block;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 a {
     display: inline-block;
@@ -18,7 +18,6 @@ a {
 .header__wrapper {
     background-color: $black;
     height: auto;
-    padding: 15px 0;
 }
 
 .header__inner {
@@ -41,17 +40,17 @@ a {
         font-size: 14px;
         a {
             padding: 25px 0;
-            transition: all .3s;
+            transition: all 0.3s;
             &:hover {
                 color: $green;
             }
         }
-        &+.menu__item {
+        & + .menu__item {
             margin-left: 35px;
         }
         &.active {
             &::before {
-                content: '';
+                content: "";
                 width: 7px;
                 height: 7px;
                 background-color: $green;
@@ -83,6 +82,7 @@ a {
     }
     &-text {
         margin-left: 5px;
+        font-size: 14px;
     }
 }
 
@@ -92,7 +92,7 @@ a {
         align-items: center;
     }
     .elem {
-        &+.elem {
+        & + .elem {
             margin-left: 28px;
         }
     }
@@ -107,9 +107,9 @@ a {
         justify-content: center;
         border: 1px solid transparent;
         font-weight: 500;
-        transition: all .3s;
+        transition: all 0.3s;
         &:hover {
-            opacity: .7;
+            opacity: 0.7;
         }
     }
     .add-object {
@@ -129,6 +129,44 @@ a {
     }
     &-img {
         display: none;
+    }
+}
+.breadcrumbs {
+   background-color: #f6f6f6; 
+}
+.breadcrumbs__inner {
+    height: 64px;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    li {
+        position: relative;
+        margin-right: 13px;
+        list-style-type: none;
+        font-size: 14px;
+        & + li {
+            padding-left: 15px;
+            &::before {
+                content: ">";
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $green;
+            }
+        }
+        .active {
+            color: $green;
+        }
+    }
+    a {
+        color: $black;
+        transition: all 0.3s;
+        &:hover {
+            color: $green;
+        }
     }
 }
 

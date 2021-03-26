@@ -11,4 +11,8 @@ $(document).ready(function () {
     $('.header__box-img img').on('click', function () {
         $('.header__box-wrap').slideToggle();
     });
+    $('.menu__item').on('click', function () {
+        $('.menu__item').removeClass('active'); 
+        $(this).addClass('active');
+    });
 });
