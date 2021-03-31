@@ -15,26 +15,26 @@ a {
     text-decoration: none;
     color: #fff;
 }
-.header__wrapper {
+.header__wrap {
     background-color: $black;
     height: auto;
 }
 
-.header__inner {
+.header__inners {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
 }
 
-.header__logo {
+.header__logos {
     img {
         display: flex;
     }
 }
 
-.menu__list {
-    .menu__item {
+.nav__list {
+    .nav__item {
         display: inline-block;
         position: relative;
         font-size: 14px;
@@ -45,10 +45,10 @@ a {
                 color: $green;
             }
         }
-        & + .menu__item {
+        & + .nav__item {
             margin-left: 35px;
         }
-        &.active {
+        &.activ {
             &::before {
                 content: "";
                 width: 7px;
@@ -64,16 +64,16 @@ a {
     }
 }
 
-.burger-menu {
+.hamburger {
     display: none;
 }
 
-.menu {
+.nav {
     margin-left: auto;
     margin-right: auto;
 }
 
-.country {
+.flag {
     display: flex;
     align-items: center;
     margin-right: 10px;
@@ -86,17 +86,17 @@ a {
     }
 }
 
-.header__box {
+.header__boxs {
     &-wrap {
         display: flex;
         align-items: center;
     }
-    .elem {
-        & + .elem {
+    .elems {
+        & + .elems {
             margin-left: 28px;
         }
     }
-    .btn {
+    .btns {
         width: 207px;
         height: 42px;
         background-color: $green;
@@ -112,15 +112,15 @@ a {
             opacity: 0.7;
         }
     }
-    .add-object {
+    .object {
         border: 1px solid #fff;
         background-color: transparent;
     }
-    .enter {
+    .enters {
         background-color: #fff;
         color: $black;
     }
-    .country {
+    .flag {
         display: flex;
         align-items: center;
         img {
@@ -131,14 +131,14 @@ a {
         display: none;
     }
 }
-.breadcrumbs {
+.hedader {
    background-color: #f6f6f6; 
 }
-.breadcrumbs__inner {
+.hedader__inner {
     height: 64px;
 }
 
-.breadcrumbs__list {
+.hedader__list {
     display: flex;
     align-items: center;
     height: 100%;
@@ -157,7 +157,7 @@ a {
                 color: $green;
             }
         }
-        .active {
+        .activ {
             color: $green;
         }
     }
@@ -171,6 +171,5 @@ a {
 }
 
 @import "connection";
-@import "navigation";
 @import "footer";
 @import "media";

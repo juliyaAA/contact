@@ -3,7 +3,7 @@
     padding: 35px 0;
     height: auto;
     overflow: hidden;
-    &__inner {
+    &__inners {
         float: right;
         display: flex;
         justify-content: space-between;
@@ -14,10 +14,10 @@
         max-width: 775px;
         width: 100%;
     }
-    &__logo img {
+    &__logos img {
         display: flex;
     }
-    &__info {
+    &__information {
         text-align: right;
     }
 }
